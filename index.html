@@ -15,7 +15,7 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="/youssef_omar_portfolio/">
+  <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -33,12 +33,20 @@
   <title>Youssef Omar | Senior Flutter Developer</title>
   <link rel="manifest" href="manifest.json">
 
-  <!-- Firebase JavaScript Trigger -->
-  <script type="text/javascript" crossorigin="anonymous">
-    window.ff_trigger_firebase_firestore = async (callback) => {
-      console.debug("Initializing Firebase firebase_firestore");
-      callback(await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js"));
+  <!-- Firebase Manual Scripts (Compat mode) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyA0mxxj0sNcs25g1nvEq8fn-Ijrjvwi_2s",
+      authDomain: "portfolio-2026-a242f.firebaseapp.com",
+      projectId: "portfolio-2026-a242f",
+      storageBucket: "portfolio-2026-a242f.firebasestorage.app",
+      messagingSenderId: "327808448027",
+      appId: "1:327808448027:web:5243f075d054ad49d9eabe",
+      measurementId: "G-5KVTKJ1R1C"
     };
+    firebase.initializeApp(firebaseConfig);
   </script>
 </head>
 
