@@ -32,6 +32,14 @@
 
   <title>Youssef Omar | Senior Flutter Developer</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase JavaScript Trigger -->
+  <script type="text/javascript" crossorigin="anonymous">
+    window.ff_trigger_firebase_firestore = async (callback) => {
+      console.debug("Initializing Firebase firebase_firestore");
+      callback(await import("https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js"));
+    };
+  </script>
 </head>
 
 <body>
